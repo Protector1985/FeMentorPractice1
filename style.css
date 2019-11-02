@@ -6,8 +6,9 @@ body {
 header{
   text-align: center;
   width:45%;
-  margin: auto;
+  position: relative;
   margin-top: 80px;
+  left:23em;
 }
 
 h1{
@@ -47,7 +48,7 @@ img {
   position:relative;
   top: 180px;
   height: 250px;
-  left: 4%;
+  left: 4em;
 
 }
 
@@ -61,7 +62,7 @@ img {
   padding-right:30px;
   width: 375px;
   border-top:6px solid #45d3d3;
-  margin:auto;
+  left:30em;
   position:relative;
   top: -210px;
   height: 250px;
@@ -77,7 +78,7 @@ img {
   padding-right:30px;
   width: 375px;
   border-top:6px solid #fcaf4a;
-  margin: auto;
+  left:30em;
   position:relative;
   top: -180px;
   height: 250px;
@@ -97,7 +98,7 @@ img {
   position:relative;
   top: -570px;
   height: 250px;
-  left: 68%;
+  left: 56em;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -109,4 +110,61 @@ img {
 
 #headline2 {
   font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+  .team-builder{
+    left: 21em;
+  }
+  .karma {
+    top: 80px;
+    left: 21em;
+  }
+
+  .supervisor {
+    top: 310px;
+    left: 5em;
+  }
+
+  .calculator {
+    left:37em;
+    top: -440px;
+  }
+
+  header {
+    left: 18em;
+  }
+main {
+  height: 900px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .team-builder{
+    left: 12em;
+  }
+  .karma {
+    top: 80px;
+    left: 12em;
+  }
+
+  .supervisor {
+    top: 310px;
+    left: 0;
+  }
+
+  .calculator {
+    left:25em;
+    top: -440px;
+  }
+
+  header {
+    left: 13em;
+  }
+
+  main {
+    height: 1000px;
+  }
+
 }
