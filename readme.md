@@ -1,1 +1,1 @@
-A basic project with html/css to practice box position and layout. 
+A basic project with html/css/flexbox to practice box positioning and layout. 
