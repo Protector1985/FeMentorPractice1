@@ -47,46 +47,62 @@ footer {
 .main-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
+
 
 
 }
 
 .card {
-  max-width: 400px;
-  flex-basis: 368px;
+  max-width: 330px;
+  flex-basis: 330px;
   height: 250px;
   max-height: 250px;
   border-radius: 10px;
   box-shadow: 2px 5px 20px 5px #efefef;
-  padding-left: 5%;
-  padding-right: 4%;
+  padding-left: 2%;
+  padding-right: 2%;
   margin-top:5%;
 
 }
 
 .card img {
-  margin-left: 280px;
+  align-self: flex-end;
   margin-top:5px;
 
 }
 
 .supervisor {
   border-top:6px solid 	#ea5353;
+
 }
 
 .team-builder {
   border-top:6px solid #45d3d3;
+
 }
 
 .karma {
   border-top:6px solid #fcaf4a;
+
 }
 
 .calculator {
    border-top:6px solid #549ef2;
+
 }
 
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+  display:flex;
+  flex-direction: column;
+  align-self: center;
 
+
+}
 
 
 .attribution { font-size: 11px; text-align: center; padding-top: 3%; }
@@ -100,11 +116,13 @@ footer {
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 861px) {
   .main-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
+
   }
   .column-container {
     display:flex;
@@ -113,9 +131,23 @@ footer {
     max-height: 550px;
     margin-left: 2%;
     margin-right: 2%;
+    flex-grow: 0;
   }
 
+  img {
+    display: flex;
+  }
 
+  .team-builder,
+  .karma {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .supervisor,
+  .calculator {
+    max-width: 368px;
+  }
 
 }
 
